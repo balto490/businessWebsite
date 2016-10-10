@@ -28,14 +28,26 @@ body {
 	left: 0;
 }
 
+/*Nav Bar*/
+
+#navbar li {
+	display: inline-block;
+	margin-top: 100px;
+	padding-right: 30px;
+	text-align: center;
+}
+
+#navbar ul {
+	background-color: yellow;
+}
+
 /*Social Media Bar*/
 
-#socialmedia {
+#socialmedia ul {
 	position: fixed;
 	top: 0;
 	left: 0;
-	border: 5px solid black;
-	width: 1270px;
+	width: 100%;
 	background-color: #B19761;
 }
 
@@ -43,14 +55,10 @@ body {
 	display: inline-block;
 	list-style-type: none;
 	padding: none;
-	top: -10px;
-	margin: 0;
-	padding: 0;
 }
 
 #socialmedia img {
 	width: 25px;
-	border: 3px solid black;
 }
 
 #blackbox1 {
@@ -61,7 +69,6 @@ body {
 	background-color: black;
 	border: 5px solid black;
 	z-index: -1;
-	width: 1200px;
 }
 
 
