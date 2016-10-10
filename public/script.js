@@ -8,7 +8,7 @@ var imageRotator = {
 
 		var currentItem = 0;
 
-		$(".rotatingimage").eq(currentItem).fadeIn(1000);
+		$(".rotatingimage").eq(currentItem).fadeIn(1);
 
 		var loop = setInterval(function(){
 			$(".rotatingimage").eq(currentItem).fadeOut(2500);
@@ -23,5 +23,17 @@ var imageRotator = {
 	};
 
 imageRotator.initialze();
+
+// Email Modal
+
+
+
+
+
+
+
+
+
+
 
 });
