@@ -14,4 +14,7 @@ end
 
 post '/contact' do
 @title = "Contact"
+
+get '/' do 
+	erb :shop
 end

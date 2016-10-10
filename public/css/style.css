@@ -61,5 +61,54 @@ body {
 	background-color: black;
 	border: 5px solid black;
 	z-index: -1;
+	width: 1200px;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+img {
+	width: 200px;
+	height: auto;
+}
+
+#box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9 {
+	width: 200px;
+	height: auto;	
+	position: relative;
+	display: inline-block;
+	margin: 30px 30px;
+	padding: 10px 10px;
+}
+
+#box1 img, #box2 img, #box3 img, #box4 img, #box5 img, #box6 img, #box7 img, #box8 img, #box9 img {
+	position: absolute;
+	opacity: 1;
+	border:1px solid black;
+
+}
+
+#box4, #box5, #box6 {
+	top: 400px;
+}
+
+#box7, #box8, #box9 {
+	top: 800px;
+}
+
+.item_quantity {
+	width: 30px;
+}
+
+#textone, #texttwo, #textthree, #textfour, #textfive, #textsix, #textseven, #texteight, #textnine {
+	margin-top: 20px;
+	margin-left: 280px;
+}
+
+#ulone, #ultwo, #ulthree, #ulfour, #ulfive, #ulsix, #ulseven, #uleight, #ulnine {
+	display: none;
+	margin-left: 280px;	
 }
 
