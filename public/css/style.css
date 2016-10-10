@@ -1,0 +1,65 @@
+body {
+	margin: 0;
+}
+
+/*Logo Home Page*/
+
+#logo {
+	position: absolute;
+	left: 900px;
+	top: 160px;
+	z-index: -1;
+}
+
+/*Rotating Image Gallery Homepage*/
+
+#imagegallery {
+	position: absolute;
+	width: 320px;
+	top: 160px;
+	border: 2px solid #B19761;
+	left: 370px;
+}
+
+.rotatingimage {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*Social Media Bar*/
+
+#socialmedia {
+	position: fixed;
+	top: 0;
+	left: 0;
+	border: 5px solid black;
+	width: 1270px;
+	background-color: #B19761;
+}
+
+#socialmedia li {
+	display: inline-block;
+	list-style-type: none;
+	padding: none;
+	top: -10px;
+	margin: 0;
+	padding: 0;
+}
+
+#socialmedia img {
+	width: 25px;
+	border: 3px solid black;
+}
+
+#blackbox1 {
+	position: absolute;
+	top: 200px;
+	width: 800px;
+	height: 420px;
+	background-color: black;
+	border: 5px solid black;
+	z-index: -1;
+}
+
