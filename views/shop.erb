@@ -5,6 +5,7 @@
 	<title>Shop</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="cookies.js"></script>
 	<script type="text/javascript" src="javascript/shop.js"></script>
 </head>
 <body>
@@ -12,71 +13,76 @@
 		<h1>Shop</h1>
 	</div>
 	<p>
-		Cart: <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
+		Cart: <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity">item</span>)
 	<br />
-	<a href="javascript:;" class="simpleCart_empty">empty cart</a>
+	<a href="shop:;" class="simpleCart_empty">empty cart</a>
 	<br />
 	</p>
 	<div id="main">
-		<p>EMROIDERED BLACK CREPE MIDI DRESS</p>
-		<div id="box1">
-			<img id="one" src="images/cld0013_3.jpg"/>
-			<img id="two" src="images/cld0013_2.jpg"/>
-			<img id="three" src="images/cld0013.jpg"/>
-		</div>
-		<span class="item_price">$180.00</span>
-		<select class="item_Size">
-				<option value="Small">Small</option>
-				<option value="Medium">Medium</option>
-				<option value="Large">Large</option>	
-			</select>	
-			<input type="text" class="item_quantity" value="1" />
-			<button id="EMROIDERED BLACK CREPE MIDI DRESS-CLD0013-$180" class="addCart">Add to Cart</button>
-			<br />
-			<button id="textone">Description</button>
-			<p>
-				<ul id="ulone">
-					<li>Solid crepe</li>
-					<li>Fully lined</li>
-					<li>Angel sleeves</li>
-					<li>Embellished detailing</li>
-					<li>Jewel neckline</li>
-					<li>Zip back closure</li>
-					<li>Regular fit – true to size</li>
-					<li>Dry clean</li>
-					<li>80% Polyester, 20% Viscose</li>
-					<li>Our mannequin is 180 cm/5.11” tall</li>
-				</ul>
-			</p>
-		<p>LITTE BLACK CREPE DRESS</p>
-		<div id="box2">
-			<img id="four" src="images/cld0014_3.jpg"/>
-			<img id="five" src="images/cld0014_2.jpg"/>
-			<img id="six" src="images/cld0014.jpg"/>
-		</div>
-		<span class="item_price">$190.00</span>
-		<select class="item_Size">
-				<option value="Small">Small</option>
-				<option value="Medium">Medium</option>
-				<option value="Large">Large</option>	
-			</select>	
-			<input type="text" class="item_quantity" value="1" />
-			<input type="button" class="item_add" value="add to cart" />
-			<br />
-			<button id="texttwo">Description</button>
-			<p>
-				<ul id="ultwo">
-					<li>Solid crepe dress</li>
-					<li>fully lined</li>
-					<li>Cutout back</li>
-					<li>Zip back closure</li>
-					<li>Hip pockets</li>
-					<li>Relaxed fit</li>
-					<li>Dry clean only</li>
-					<li>70% Polyester 20% Viscose 10% Wool</li>
-					<li>Our mannequin 180cm/5.11″ tall</li>
-				</ul>
-			</p>
+		<article>
+			<p>EMROIDERED BLACK CREPE MIDI DRESS</p>
+			<div id="box1">
+				<img id="one" src="images/cld0013_3.jpg"/>
+				<img id="two" src="images/cld0013_2.jpg"/>
+				<img id="three" src="images/cld0013.jpg"/>
+			</div>
+			<span class="item_price">$180.00</span>
+			<select class="item_Size">
+					<option value="Small">Small</option>
+					<option value="Medium">Medium</option>
+					<option value="Large">Large</option>	
+				</select>	
+				<input type="text" class="item_quantity" value="1" />
+				<button id="EMROIDERED BLACK CREPE MIDI DRESS-CLD0013-$180" class="addCart">Add to Cart</button>
+				<br />
+				<button id="textone">Description</button>
+				<p>
+					<ul id="ulone">
+						<li>Solid crepe</li>
+						<li>Fully lined</li>
+						<li>Angel sleeves</li>
+						<li>Embellished detailing</li>
+						<li>Jewel neckline</li>
+						<li>Zip back closure</li>
+						<li>Regular fit – true to size</li>
+						<li>Dry clean</li>
+						<li>80% Polyester, 20% Viscose</li>
+						<li>Our mannequin is 180 cm/5.11” tall</li>
+					</ul>
+				</p>
+		</article>
+		<article>
+			<p>LITTE BLACK CREPE DRESS</p>
+			<div id="box2">
+				<img id="four" src="images/cld0014_3.jpg"/>
+				<img id="five" src="images/cld0014_2.jpg"/>
+				<img id="six" src="images/cld0014.jpg"/>
+			</div>
+			<span class="item_price">$190.00</span>
+			<select class="item_Size">
+					<option value="Small">Small</option>
+					<option value="Medium">Medium</option>
+					<option value="Large">Large</option>	
+				</select>	
+				<input type="text" class="item_quantity" value="1" />
+				<button id="LITTE BLACK CREPE DRESS-CLD0014-$190" class="addCart">Add to Cart</button>
+				<br />
+				<button id="texttwo">Description</button>
+				<p>
+					<ul id="ultwo">
+						<li>Solid crepe dress</li>
+						<li>fully lined</li>
+						<li>Cutout back</li>
+						<li>Zip back closure</li>
+						<li>Hip pockets</li>
+						<li>Relaxed fit</li>
+						<li>Dry clean only</li>
+						<li>70% Polyester 20% Viscose 10% Wool</li>
+						<li>Our mannequin 180cm/5.11″ tall</li>
+					</ul>
+				</p>
+			</article>
+			<article>
 		<p>WHITE FLORAL EMBROIDERED DRESS</p>
 		<div id="box3">
 			<img id="seven" src="images/cld0016_3.jpg"/>
@@ -90,7 +96,7 @@
 				<option value="Large">Large</option>	
 			</select>	
 			<input type="text" class="item_quantity" value="1" />
-			<input type="button" class="item_add" value="add to cart" />
+			<button id="WHITE FLORAL EMBROIDERED DRESS-CLD0016-$185" class="addCart">Add to Cart</button>
 		<br />
 		<button id="textthree">Description</button>
 			<p>
@@ -109,6 +115,8 @@
 					<li>Our  mannequine 180cm/5.11″ tall</li>
 				</ul>
 			</p>
+		</article>
+		<article>
 		<p>FAIRY WHITE DRESS</p>
 		<div id="box4">
 			<img id="ten" src="images/cld0017_3.jpg"/>
@@ -122,7 +130,7 @@
 				<option value="Large">Large</option>
 			</select>
 			<input type="text" class="item_quantity" value="1" />
-			<input type="button" class="item_add" value="add to cart" />
+			<button id="FAIRY WHITE DRESS-CLD0017-$170" class="addCart">Add to Cart</button>
 			<br />	
 			<button id="textfour">Description</button>
 			<p>
@@ -140,6 +148,8 @@
 				</ul>
 			</p>
 		<p>A-LINE SEQUIN PARTY RAINBOW DRESS</p>
+		</article>
+		<article>
 		<div id="box5">
 			<img id="thirteen" src="images/cld0018_3.jpg"/>
 			<img id="fourteen" src="images/cld0018_2.jpg"/>
@@ -152,7 +162,7 @@
 				<option value="Large">Large</option>	
 			</select>	
 			<input type="text" class="item_quantity" value="1" />
-			<input type="button" class="item_add" value="add to cart" />
+			<button id="A LINE SEQUIN PARTY RAINBOW DRESS-CLD0018-$165" class="addCart">Add to Cart</button>
 			<br />	
 			<button id="textfive">Description</button>
 			<p>
@@ -170,6 +180,8 @@
 				</ul>
 			</p>
 		<p>FUCHSIA LACE DRESS</p>
+		</article>
+		<article>
 		<div id="box6">
 			<img id="sixteen" src="images/cld0021_3.jpg"/>
 			<img id="seventeen" src="images/cld0021_2.jpg"/>
@@ -182,7 +194,7 @@
 				<option value="Large">Large</option>	
 			</select>	
 			<input type="text" class="item_quantity" value="1" />
-			<input type="button" class="item_add" value="add to cart" />
+			<button id="FUCHSIA LACE DRESS-CLD0021-$150" class="addCart">Add to Cart</button>
 			<br />	
 			<button id="textsix">Description</button>
 			<p>
@@ -199,6 +211,7 @@
 				</ul>
 			</p>
 		<br />
+		</article>
 		<p>BAROGUE STYLISH HANDBAG</p>
 		<div id="box7">
 			<img id="nineteen" src="images/flb001_3.jpg"/>
@@ -207,7 +220,7 @@
 		</div>
 		<span class="item_price">$120.00</span>
 		<input type="text" class="item_quantity" value="1" />
-			<input type="button" class="item_add" value="add to cart" />
+		<button id="BAROGUE STYLISH HANDBAG-FLB001-$120" class="addCart">Add to Cart</button>
 			<br />	
 			<button id="textseven">Description</button>
 			<p>
@@ -233,7 +246,7 @@
 		</div>
 		<span class="item_price">$110.00</span>
 		<input type="text" class="item_quantity" value="1" />
-			<input type="button" class="item_add" value="add to cart" />
+		<button id="RED HEART HANDBAG (SQUARE)-FLB004-$110" class="addCart">Add to Cart</button>
 			<br />	
 			<button id="texteight">Description</button>
 			<p>
@@ -257,7 +270,7 @@
 		</div>
 		<span class="item_price">$100.00</span>
 		<input type="text" class="item_quantity" value="1" />
-		<input type="button" class="item_add" value="add to cart" />
+		<button id="DAISY FIELD HANDBAG-FLB005-$100" class="addCart">Add to Cart</button>
 		<br />	
 		<button id="textnine">Description</button>
 		<p>
@@ -274,5 +287,8 @@
 			</ul>
 		</p>
 	</div>
+
+
+
 </body>
 </html>
