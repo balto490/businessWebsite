@@ -32,8 +32,6 @@ post '/shop' do
 @title = "Shop"
 end
 
-<<<<<<< HEAD
-end
 
 
 post '/cart' do
@@ -46,8 +44,7 @@ get '/cart' do
 	erb :cart
 
 end
-=======
+
 post '/contact' do
 @title = "Contact"
 end
->>>>>>> a0a39224bfcab476c2ec8d8a68e04fd45fb835e8
