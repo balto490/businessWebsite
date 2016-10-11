@@ -1,11 +1,3 @@
-var total = Cookies.get(".simpleCart_quantity");
-
-if(total == null) {
-
-    total = 0;
-}
-
-
 
 
 
@@ -48,23 +40,17 @@ $("#texteight").click(function(){
 $("#textnine").click(function(){
     $("#ulnine").slideDown(1000);
 });
+
 $('button.addCart').click(function(event) {
   var a = $(".item_Size", $(event.target).parent() ); 
   var b = $(".item_quantity", $(event.target).parent() );
   data = $(this).attr('id').split('-');
-  console.log(data[0] ,data[1], data[2], a.val(), b.val());
-  
+  var c = data[0]  + "-" +data[1]+ "-" + data[2] + "-" + a.val()+ "-" + b.val();
+  console.log(c);
+  document.cookie +=c;
   return false;
  	
  });
-
-$(".addCart").click(function(){
-  total = parseInt(total, 10) + 1;
-  $(".simpleCart_quantity").html(total);
-  Cookies.set(".simpleCart_quantity", total);
-  
-});
-
 
 
 });

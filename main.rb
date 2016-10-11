@@ -1,9 +1,38 @@
 require 'sinatra'
 
 get '/' do 
-	
-	erb :shop
+	erb :home
+end
 
+get '/shop' do
+	erb :shop
+end
+
+get '/contact' do
+	erb :contact
+end
+
+get '/checkout' do
+	erb :checkout
+end
+
+get '/blog' do
+	erb :blog
+end
+
+post '/' do
+@title = "Home"
+end
+
+post '/checkout' do
+@title = "Checkout"	
+end
+
+post '/shop' do
+@title = "Shop"
+end
+
+<<<<<<< HEAD
 end
 
 
@@ -17,3 +46,8 @@ get '/cart' do
 	erb :cart
 
 end
+=======
+post '/contact' do
+@title = "Contact"
+end
+>>>>>>> a0a39224bfcab476c2ec8d8a68e04fd45fb835e8
