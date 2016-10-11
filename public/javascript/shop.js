@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function(){
 
 switch1();
@@ -37,9 +40,14 @@ $("#texteight").click(function(){
 $("#textnine").click(function(){
     $("#ulnine").slideDown(1000);
 });
-$('button.addCart').click(function() {
+
+$('button.addCart').click(function(event) {
+  var a = $(".item_Size", $(event.target).parent() ); 
+  var b = $(".item_quantity", $(event.target).parent() );
   data = $(this).attr('id').split('-');
-  console.log(data[0] ,data[1], data[2], 1);
+  var c = data[0]  + "-" +data[1]+ "-" + data[2] + "-" + a.val()+ "-" + b.val();
+  console.log(c);
+  document.cookie +=c;
   return false;
  	
  });
@@ -70,5 +78,4 @@ var switch4 = function(){
 $("#three, #six, #nine, #twelve, #fifteen, #eighteen, #twentyone, #twentyfour, #twentyseven").animate({opacity:1},3000, "swing", switch1);
 
 }
-
 
