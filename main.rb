@@ -4,6 +4,10 @@ get '/' do
 	erb :home
 end
 
+get '/cart' do
+	erb :cart
+end
+
 get '/shop' do
 	erb :shop
 end
@@ -32,18 +36,6 @@ post '/shop' do
 @title = "Shop"
 end
 
-
-
-post '/cart' do
-  @data = params["data_value"]
-  erb :cart
-end
-
-get '/cart' do 
-	@data = params["data_value"]
-	erb :cart
-
-end
 
 post '/contact' do
 @title = "Contact"

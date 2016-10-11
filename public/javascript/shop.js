@@ -49,6 +49,7 @@ $('button.addCart').click(function(event) {
   console.log(c);
   document.cookie += c;
   var total = 0
+  var price = 0
   var products = document.cookie.split('-');
   var c = products.pop();
   var obj = {}
@@ -56,10 +57,12 @@ $('button.addCart').click(function(event) {
     var newArry = products.slice(i, i+5)
     // console.log(products)
     total += parseInt(products[i+4], 10)
+    price += parseInt(products[i+4]*products[i+2], 10)
     obj[k] = newArry
     // console.log(obj)
-    console.log(total)
-    $("#simpleCart_quantity").html(total);
+
+    $("#simpleCart_quantity").html(" " + total);
+    $("#price").html("Total:$" + price);
 
 }
 
