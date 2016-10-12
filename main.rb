@@ -39,6 +39,7 @@ end
 
 
 post '/cart' do
+@title = "Cart"
   @data = params["data_value"]
   erb :cart
 end
@@ -75,4 +76,4 @@ end
 
 
 
-
+end
