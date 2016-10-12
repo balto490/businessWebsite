@@ -57,9 +57,35 @@
 			</form>
 		</div>
 		</div>
-
 <%= yield %> 
+	<div id = bottomnavbar>
+		<div class="col-lg-4">
+			<h3>Navigation</h3>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/shop">Shop</a></li>
+			<li><a href="/contact">Contact</a></li>
+			<li><a href="/cart">Cart</a></li>
+		</ul>
+		</div>
+		<div class="col-lg-4">
+			<h3>Featured Products</h3>
+			<h6>LITTE BLACK CREPE DRESS<img id="prod" src="images/cld0014.jpg"></h6>
+			<h6>WHITE FLORAL EMBROIDERED DRESS<img id="prod" src="images/cld0016.jpg"></h6>
+			<h6>FAIRY WHITE DRESS<img id="prod" src="images/cld0017.jpg"></h6>
+		</div>
+		<div class="col-lg-4">
+			<h3>Subscribe</h3>
+      		<p>Subscribe to our newsletter for sales and trends<p>
+    		<div class="bottomsubscription">
+    		<form action="index.html" method="post" class="subscribe-form">
+      			<input type="email" name="email" class="subscribe-input" placeholder="Email address">
+      			<button type="submit" class="subscribe-submit">Subscribe</button>
+    		</form>
+    		</div>
+		</div>
 
+	</div>
+	<footer>&copy Merging Styles</footer>
 </body>
-
 </html>
