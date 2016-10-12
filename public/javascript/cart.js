@@ -20,9 +20,15 @@ $(document).ready(function(){
  };
 
  for(j=0; j < newArry.length; j++) { 
+        // name
       $("#maincart").append("<h5>" + obj[j][0] + "</h5>");
+        // size
       $("#maincart").append("<h6>" + obj[j][3] + "</h6>");
+        // quantity
       $("#maincart").append("<h4>" + obj[j][4] + "</h4>");
+        // price
+      $("#maincart").append("<h3>" + "$" +obj[j][2] + "</h3>");
+
     }
 
 
