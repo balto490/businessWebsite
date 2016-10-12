@@ -136,7 +136,7 @@ body {
 	width: 700px;
 	height: 400px;
 	border: 5px solid #B19761;
-/*	display: none;*/
+	display: none;
 }
 
 /*Contact Us*/
@@ -373,14 +373,32 @@ img {
 }
 
 #textone, #texttwo, #textthree, #textfour, #textfive, #textsix, #textseven, #texteight, #textnine {
+	width: 170px;
 	margin-top: 20px;
 	margin-left: 280px;
+	opacity: 0.5;
+	background-color: black;
+	color: white;
 }
 
 #ulone, #ultwo, #ulthree, #ulfour, #ulfive, #ulsix, #ulseven, #uleight, #ulnine {
+	width: 190px;
 	display: none;
+	text-align: left;
 	margin-left: 260px;
 }
+
+.addCart {
+	opacity: 0.5;
+	background-color: black;
+	color: white;
+
+}
+
+#price, #simpleCart_total {
+	margin-left: 950px;
+}
+
 
 /*Contact Page*/
 
@@ -396,3 +414,9 @@ img {
 	padding: 10px;
 }
 
+/*Cart */
+
+#crt, #crt2{
+	text-align: center;
+	margin: 30px 30px;
+}
