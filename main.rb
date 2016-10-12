@@ -32,10 +32,6 @@ post '/shop' do
 @title = "Shop"
 end
 
-<<<<<<< HEAD
-end
-
-
 post '/cart' do
   @data = params["data_value"]
   erb :cart
@@ -46,7 +42,7 @@ get '/cart' do
 	erb :cart
 
 end
-=======
+
 post '/contact' do
 # @title = "Contact"
 mail = SendGrid::Mail.new(
@@ -64,4 +60,4 @@ mail = SendGrid::Mail.new(
 	sg = SendGrid::API.new( api_key: ENV['SENDGRID_API_KEY'])
 	response = sg.client.mail._('send').post(request_body: mail.to_json)
 end
->>>>>>> a0a39224bfcab476c2ec8d8a68e04fd45fb835e8
+
