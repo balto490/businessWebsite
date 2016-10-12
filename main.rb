@@ -66,7 +66,7 @@ mail = SendGrid::Mail.new(
 		)
 	)
 	sg = SendGrid::API.new( api_key: ENV['SENDGRID_API_KEY'])
-	response = sg.client.mail._('send').post(request_body: mail.to_json)
+		response = sg.client.mail._('send').post(request_body: mail.to_json)
 	@msg = "Thanks for your submission, we will get back to you shortly"
 else
      @msg = "Not a valid email, please re-enter"

@@ -215,6 +215,8 @@ img {
 }
 
 #main {
+	width: 1270px;
+	height: 1300px;
 	position: relative;
 }
 
@@ -222,8 +224,7 @@ img {
 	width: 200px;
 	height: auto;	
 	display: inline-block;
-	margin: 30px 30px;
-	padding: 10px 10px;
+	margin: 30px 0px;
 	position: absolute;
 }
 
@@ -243,12 +244,13 @@ img {
 }
 
 #box1 {
+	
 	top:50px;
-	left:50px;
+	left:30px;
 }
 #box2 {
 	top: 50px;
-	left: 500px;
+	left: 460px;
 }
 
 #box3 {
@@ -293,14 +295,13 @@ img {
 
 #dof1 {
 	top:50px;
-	left:30px;
 	position: absolute;
 
 }
 
 #dof2 {
 	top:50px;
-	left:480px;
+	left:430px;
 	position: absolute;
 }
 
@@ -416,11 +417,21 @@ img {
 #textone, #texttwo, #textthree, #textfour, #textfive, #textsix, #textseven, #texteight, #textnine {
 	width: 170px;
 	margin-top: 20px;
-	margin-left: 280px;
+	margin-left: 260px;
 	opacity: 0.5;
 	background-color: black;
 	color: white;
+	cursor: pointer;
 }
+
+#textone:hover, #texttwo:hover, #textthree:hover, #textfour:hover, #textfive:hover, #textsix:hover, #textseven:hover, #texteight:hover, #textnine:hover {
+
+ 	background-color: white;
+ 	color:black;
+ 	box-shadow: 0 0 10px grey;
+
+}
+
 
 #ulone, #ultwo, #ulthree, #ulfour, #ulfive, #ulsix, #ulseven, #uleight, #ulnine {
 	width: 190px;

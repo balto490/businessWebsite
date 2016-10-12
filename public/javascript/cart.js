@@ -11,7 +11,7 @@ $(document).ready(function(){
     total += parseInt(products[i+4], 10)
     price += parseInt(products[i+4]*products[i+2], 10)
     obj[k] = newArry
-    console.log(obj)
+    // console.log(obj)
     
 
     $("#crt").html(" " + total);
@@ -26,7 +26,7 @@ $(document).ready(function(){
       $("#maincart").append("<h6>" + obj[j][3] + "</h6>");
         // quantity
       $("#maincart").append("<h4>" + obj[j][4] + "</h4>");
-        // price
+        // prices
       $("#maincart").append("<h3>" + "$" +obj[j][2] + "</h3>");
 
     }

@@ -6,39 +6,75 @@ $(document).ready(function(){
 switch1();
 
 $("#textone").click(function(){
-    $("#ulone").slideDown(1000);
+    if ($("#ulone").is(":hidden")) {
+     $("#ulone").slideDown("slow");
+   } else {
+      $("#ulone").slideUp("slow");
+   }
 });
 
 $("#texttwo").click(function(){
-    $("#ultwo").slideDown(1000);
+   if ($("#ultwo").is(":hidden")) {
+     $("#ultwo").slideDown("slow");
+   } else {
+      $("#ultwo").slideUp("slow");
+   }
 });
 
 $("#textthree").click(function(){
-    $("#ulthree").slideDown(1000);
+    if ($("#ulthree").is(":hidden")) {
+     $("#ulthree").slideDown("slow");
+   } else {
+      $("#ulthree").slideUp("slow");
+   }
 });
 
 $("#textfour").click(function(){
-    $("#ulfour").slideDown(1000);
+    if ($("#ulfour").is(":hidden")) {
+     $("#ulfour").slideDown("slow");
+   } else {
+      $("#ulfour").slideUp("slow");
+   }
 });
 
 $("#textfive").click(function(){
-    $("#ulfive").slideDown(1000);
+    if ($("#ulfive").is(":hidden")) {
+     $("#ulfive").slideDown("slow");
+   } else {
+      $("#ulfive").slideUp("slow");
+   }
 });
 
 $("#textsix").click(function(){
-    $("#ulsix").slideDown(1000);
+    if ($("#ulsix").is(":hidden")) {
+     $("#ulsix").slideDown("slow");
+   } else {
+      $("#ulsix").slideUp("slow");
+   }
 });
 
 $("#textseven").click(function(){
-    $("#ulseven").slideDown(1000);
+    if ($("#ulseven").is(":hidden")) {
+     $("#ulseven").slideDown("slow");
+   } else {
+      $("#ulseven").slideUp("slow");
+   }
 });
 
 $("#texteight").click(function(){
-    $("#uleight").slideDown(1000);
+    if ($("#uleight").is(":hidden")) {
+     $("#uleight").slideDown("slow");
+   } else {
+      $("#uleight").slideUp("slow");
+   }
 });
 
 $("#textnine").click(function(){
-    $("#ulnine").slideDown(1000);
+    if ($("#ulnine").is(":hidden")) {
+     $("#ulnine").slideDown("slow");
+   } else {
+      $("#ulnine").slideUp("slow");
+   }
 });
 
 $('button.addCart').click(function(event) {
