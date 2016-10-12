@@ -460,4 +460,30 @@ img {
 #crt, #crt2{
 	text-align: center;
 	margin: 30px 30px;
+	margin-top: 200px;
+}
+
+
+#carttable {
+	padding-top: 100px;
+}
+
+#carttitle {
+	position: absolute;
+	left: 350px;
+}
+
+#cartsize {
+	position: absolute;
+	left: 700px;
+}
+
+#cartamount {
+	position: absolute;
+	left: 800px;
+}
+
+#cartprice {
+	position: absolute;
+	left: 900px;
 }
