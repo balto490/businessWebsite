@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript" src="shop.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
 	<title><%= @title %></title>
 </head>
 <body> 
@@ -35,14 +36,14 @@
 	</div>
 	<div id="modal">
 		<div id="close">X</div>
-			<h1>Contact Us</h1>
-			<h5>Please enter your name, email and message</h5>
+			<h1 id="h1contact">Contact Us</h1>
+			<h5 id="h5instructions">Please enter your name, email and message</h5>
 			<form method="POST" action="/contact">
-				<table>
+				<table id="table">
 					<tr>
-						<td><label for="name">Name</label></td>
+						<td id="name"><label for="name">Name</label></td>
 						<td><input type="text" name="name" placeholder="Enter Name Here"></td>
-						<td><label for="email">Email</label></td>
+						<td id="email"><label for="email">Email</label></td>
 						<td><input type="text" name="email" placeholder="Enter Email Here"></td>
 					</tr>
 					<tr>
@@ -55,7 +56,9 @@
 			</form>
 		</div>
 		</div>
+
 <%= yield %> 
+
 </body>
 
 </html>

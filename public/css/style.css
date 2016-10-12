@@ -1,3 +1,8 @@
+* {
+	font-family: 'Rokkitt', serif;
+}
+
+
 body {
 	margin: 0;
 }
@@ -21,6 +26,24 @@ body {
 	left: 880px;
 	top: 160px;
 	z-index: -1;
+}
+
+/*Style List Home Page*/
+
+#stylelist {
+	color: white;
+	position: absolute;
+	top: 130px;
+	left: 40px;
+	font-size: 30px;
+}
+
+#stylelist ul {
+	list-style-type: none;
+}
+
+#stylelist li {
+	padding-top: 50px;
 }
 
 /*Logo Nav Bar*/
@@ -146,6 +169,24 @@ body {
 	z-index: 2;
 	left: 900px;
 	top: -4px;
+}
+
+#h1contact {
+	text-align: center;
+}
+
+#h5instructions {
+	text-align: center;
+}
+
+#table {
+	margin-left: 122px;
+}
+
+#close {
+	margin-left: 20px;
+	margin-top: 10px;
+	cursor: pointer;
 }
 
 #blackbox1 {
