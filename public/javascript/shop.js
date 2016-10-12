@@ -97,8 +97,8 @@ $('button.addCart').click(function(event) {
     obj[k] = newArry
     // console.log(obj)
 
-    $("#simpleCart_quantity").html(" " + total);
-    $("#price").html("Total:$" + price);
+    $("#simpleCart_quantity").html(" " + total + " items");
+    $("#price").html("Total: $" + price);
 
 }
 
