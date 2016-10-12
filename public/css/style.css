@@ -250,160 +250,175 @@ img {
 }
 #box2 {
 	top: 50px;
-	left: 460px;
+	left: 440px;
 }
 
 #box3 {
 	top: 50px;
-	left: 900px;
+	left: 850px;
 }
 
 #box4 {
 	top: 450px;
-	left: 50px;
+	left: 30px;
 }
 
 
 #box5 {
 	top: 450px;
-	left: 500px;
+	left: 440px;
 }
 
 
 #box6 {
 	top: 450px;
-	left: 900px;
+	left: 850px;
 }
 
 
 #box7 {
 	top: 900px;
-	left: 50px;
+	left: 30px;
 }
 
 
 #box8 {
 	top: 900px;
-	left: 500px;
+	left: 440px;
 }
 
 
 #box9 {
 	top: 900px;
-	left: 900px;
+	left: 850px;
 }
 
 #dof1 {
-	top:50px;
+	top:40px;
 	position: absolute;
 
 }
 
 #dof2 {
-	top:50px;
-	left:430px;
+	top:40px;
+	left:410px;
 	position: absolute;
 }
 
 #dof3 {
-	top:50px;
-	left:880px;
+	top:40px;
+	left:820px;
 	position: absolute;
 }
 
 #dof4 {
-	top:450px;
-	left:30px;
+	top:440px;
 	position: absolute;
 }
 
 #dof5 {
-	top:450px;
-	left:480px;
+	top:440px;
+	left:410px;
 	position: absolute;
 }
 
 #dof6 {
-	top:450px;
-	left:880px;
+	top:440px;
+	left:820px;
 	position: absolute;
 }
 
 #dof7 {
-	top: 900px;
-	left: 30px;
+	top: 890px;
 	position: absolute;
 }
 
 
 #dof8 {
-	top: 900px;
-	left: 480px;
+	top: 890px;
+	left:410px;
 	position: absolute;
 }
 
 
 #dof9 {
-	top: 900px;
-	left: 880px;
+	top: 890px;
+	left:820px;
 	position: absolute;
 }
 
 
 #p1 {
 	top: 20px;
-	left: 20px;
+	left: 15px;
 	position: absolute;
+	font-weight: bold;
 }
 
 #p2 {
 	top: 20px;
-	left: 480px;
+	left: 460px;
 	position: absolute;
+	font-weight: bold;
 }
 
 
 #p3 {
 	top: 20px;
-	left: 880px;
+	left: 840px;
 	position: absolute;
+	font-weight: bold;
 }
 
 #p4 {
 	top: 420px;
-	left: 30px;
+	left: 70px;
 	position: absolute;
+	font-weight: bold;
 }
 
 #p5 {
 	top: 420px;
-	left: 480px;
+	left: 425px;
 	position: absolute;
+	font-weight: bold;
 }
 
 #p6 {
 	top: 420px;
-	left: 880px;
+	left: 890px;
 	position: absolute;
+	font-weight: bold;
 }
 
 #p7 {
 	top: 870px;
-	left: 30px;
+	left: 42px;
 	position: absolute;
+	font-weight: bold;
 }
 
 #p8 {
 	top: 870px;
-	left: 480px;
+	left: 448px;
 	position: absolute;
+	font-weight: bold;
 }
 
 #p9 {
 	top: 870px;
-	left: 880px;
+	left: 883px;
 	position: absolute;
+	font-weight: bold;
 }
+
+.ip1 {
+	position: absolute;
+	left: 100px;
+	top: 5px;
+	font-size: 20px;
+}
+
 
 .ite_price {
 	display: inline-block;
@@ -412,23 +427,49 @@ img {
 
 .item_quantity {
 	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 330px;
+	left: 110px;
+	text-align: center;
+	outline: none;
+}
+.item_Size {
+	height: 30px;
+	position: absolute;
+	top: 330px;
+	left: 30px;
+	background-color: grey;
+	color: white;
+	outline: none;
+}
+
+
+.addCart:hover {
+	background-color: white;
+ 	color:black;
+ 	box-shadow: 0 0 10px grey;
+
 }
 
 #textone, #texttwo, #textthree, #textfour, #textfive, #textsix, #textseven, #texteight, #textnine {
 	width: 170px;
 	margin-top: 20px;
-	margin-left: 260px;
+	margin-left: 250px;
 	opacity: 0.5;
 	background-color: black;
 	color: white;
 	cursor: pointer;
+	outline: none;
 }
+
 
 #textone:hover, #texttwo:hover, #textthree:hover, #textfour:hover, #textfive:hover, #textsix:hover, #textseven:hover, #texteight:hover, #textnine:hover {
 
  	background-color: white;
  	color:black;
  	box-shadow: 0 0 10px grey;
+
 
 }
 
@@ -437,18 +478,21 @@ img {
 	width: 190px;
 	display: none;
 	text-align: left;
-	margin-left: 260px;
+	margin-left: 235px;
 }
 
 .addCart {
 	opacity: 0.5;
 	background-color: black;
 	color: white;
-
+	outline: none;
+	position: absolute;
+	top: 330px;
+	left: 150px;
 }
 
 #price, #simpleCart_total {
-	margin-left: 950px;
+	margin-left: 890px;	
 }
 
 

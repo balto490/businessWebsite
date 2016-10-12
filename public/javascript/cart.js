@@ -7,11 +7,11 @@ $(document).ready(function(){
   var obj = {}
   for (i=0, k=0; i < products.length; i+=5, k++) {
     var newArry = products.slice(i, i+5)
-    // console.log(newArry)
+    console.log(newArry)
     total += parseInt(products[i+4], 10)
     price += parseInt(products[i+4]*products[i+2], 10)
     obj[k] = newArry
-    // console.log(obj)
+    console.log(obj)
     
 
     $("#crt").html(" " + total);
@@ -23,13 +23,12 @@ $(document).ready(function(){
         // name
       $("#carttitle").append("<h5>" + obj[j][0] + "</h5>");
         // size
-      $("#cartsize").append("<h5>" + obj[j][3] + "</h5>");
+      $("#cartsize").append("<h5>" + obj[j][3] +  "</h5>");
         // quantity
 
-      $("#maincart").append("<h4>" + obj[j][4] + "</h4>");
-        // prices
-      $("#maincart").append("<h3>" + "$" +obj[j][2] + "</h3>");
-    
+      $("#cartamount").append("<h5>" + obj[j][4] + "</h5>");
+        // price
+      $("#cartprice").append("<h5>" + "$" +obj[j][2] + "</h5>");
 
 
   }
