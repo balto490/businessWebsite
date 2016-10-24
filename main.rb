@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sendgrid-ruby'
+require 'sinatra/flash'
 
 get '/' do 
 	erb :home
@@ -25,8 +26,9 @@ get '/blog' do
 	erb :blog
 end
 
-post '/' do
-@title = "Home"
+post '/contact' do
+@title = "Contact"
+
 end
 
 post '/checkout' do
@@ -51,8 +53,8 @@ get '/cart' do
 end
 
 
-post '/contact' do
-@title = "Contact"
+post '/' do
+@title = "home"
 if /^[^@]+@[^\.]{2,}\.[^\.]{2,}$/ =~ params[:email]
 mail = SendGrid::Mail.new(
 		SendGrid::Email.new(email:"balt490@gmail.com"),
@@ -69,8 +71,11 @@ mail = SendGrid::Mail.new(
 	sg = SendGrid::API.new( api_key: ENV['SENDGRID_API_KEY'])
 		response = sg.client.mail._('send').post(request_body: mail.to_json)
 	@msg = "Thanks for your submission, we will get back to you shortly"
+	flash[:message] = "Thanks for your message, we will get back you shortly."
+	redirect :'/'
+	
 else
-     @msg = "Not a valid email, please re-enter"
+    @msg = "Not a valid email, please re-enter"
      @error.push( 'email' )
 end
 
