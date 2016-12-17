@@ -1,17 +1,21 @@
-$(document).ready(function(){
 
-  var total = 0
+function myFunction() {
+
+ var total = 0
   var price = 0
+  console.log(document.cookie)
   var products = document.cookie.split('-');
+  // console.log(products)
   var c = products.pop();
+  // console.log('Yerlan' + products)
   var obj = {}
   for (i=0, k=0; i < products.length; i+=5, k++) {
     var newArry = products.slice(i, i+5)
-    console.log(newArry)
+    // console.log(newArry)
     total += parseInt(products[i+4], 10)
     price += parseInt(products[i+4]*products[i+2], 10)
     obj[k] = newArry
-    console.log(obj)
+    // console.log(obj)
     
 
     $("#crt").html(" " + total);
@@ -20,6 +24,7 @@ $(document).ready(function(){
  };
 
  for(j=0; j < newArry.length; j++) { 
+      // console.log(obj)
         // name
       $("#carttitle").append("<h5>" + obj[j][0] + "</h5>");
         // size
@@ -33,8 +38,4 @@ $(document).ready(function(){
 
   }
 
-
- });
-
-
-
+}
